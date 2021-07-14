@@ -1,0 +1,179 @@
+/* fonts  */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+/* common styles  */
+body{
+    font-family: 'Poppins', sans-serif;
+    margin: 0px;
+}
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+/* -----==Top banner style end==-----  */
+.top-banner{
+    display: flex;
+    justify-content: space-between;
+    background-color: #2D25A0;
+    width: 100%;
+}
+.top-banner-text{
+    margin-top: 157px;
+    margin-left: 156px;
+    margin-bottom: 169px;
+}
+.title{
+    color: white;
+    font-size: 64px;
+    font-weight: 700;
+    margin-bottom: 27px;
+
+}
+button{
+    color: white;
+    background-color: #E02C6D;
+    font-size: 16px;
+    margin: 0;
+    padding-left: 24px;
+    padding-right: 24px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border: none;
+}
+button:hover{
+    background-color: orange;
+    border-radius: 5px;
+}
+    
+
+.top-banner-img{
+    /* image in the fig file were seperate,
+    but image in the file wasn't. i added
+    the top margine to make my site more accurate
+    to the mockup  */
+    margin-top: 170px;
+    margin-right: 141px;
+    transition: 1s;
+}
+.top-banner-img:hover{
+    transform: scale(110%);
+}
+/* -----==Top banner style end==-----  */
+/* -----==blog styles start==-----  */
+.blogs{
+    margin-top: 70px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+.blog{
+    margin-right: 30px;
+    margin-bottom: 27px;
+    background-color: white;
+    width: 330px;
+    height: 474px;
+    box-shadow: 0px 0px 15px #00000021;
+}
+.blog-elements{
+    padding: 15px;
+}
+.blog-img{
+    margin-bottom: 16px;
+}
+.blog-title{
+    color: #18191F;
+    font-size: 28px;
+    font-weight: 700;
+    margin: 0;
+}
+.blog-info{
+    margin-top: 10px;
+    color: #6C6C6C;
+    font-size: 16px;
+}
+/* -----==blog styles end==-----  */
+/* -----==Personal info and pole styles start-==-----  */
+.personal-info{
+    color: #2D25A0;
+}
+legend{
+    font-weight: 700;
+}
+fieldset{
+    width: 1440px;
+}
+.pole{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+/* -----==Personal info and pole styles end-==-----  */
+/* -----==Comment-section styles start-==-----  */
+.comments{
+    margin: 20px;
+}
+.comment-header{
+    font-weight: 700;
+}
+/* -----==Comment-section styles end-==-----  */
+/* -----==footer styles start-==-----  */
+footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+footer div img{
+    margin: 0px;
+}
+.social-icon{
+    font-size: 32px;
+    color: #969BAB;
+    margin: 20px;
+}
+.copyright{
+    font-size: 18px;
+}
+/* -----==footer styles end==-----  */
+
+/* Mobile Devices */
+@media only screen and (max-width:688px){
+    .top-banner{
+        width: 100%;
+        flex-direction: column;
+    }
+    .top-banner-text{
+        margin-top: 50px;
+        margin-left: 20px;
+        margin-bottom: 50px;
+    }
+    .top-banner-img{
+        margin-top: 0px;
+        margin-left: 16px;
+        margin-right: 16px;
+        margin-bottom: 62px;
+        width: 100%;
+        transform: none;
+        transition: none;
+    }
+    .top-banner-img:hover{
+        transform: none;
+    }
+    .blogs{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .blog{
+        margin-left: 15px;
+        margin-right: 15px;s
+        margin-top: 24px;
+    }
+    fieldset{
+        width: 80%;
+    }
+    .pole{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    footer div img{
+        width: 70%;
+        padding-left: 51px;
+    }
+}
